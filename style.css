@@ -11,22 +11,50 @@
   font-family: "Gilmer-medium";
   src: url("Fonts/gilmer-medium.woff");
 }
-
+/*HOME*/
+/*end of home*/
+/*General*/
 h1{
 	font-family: "Gilmer-bold", sans-serif;
 	font-size: 3rem;
 	text-align: center;
 }
+ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	margin-left: 4%;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	font-family: "Gilmer-bold", sans-serif;
+	display: block;
+	color: black;
+	padding: 14px 30px;
+	font-size: 1.4rem;
+	text-decoration: none;
+	-webkit-transition: transform 300ms ease-in-out;
+}
+li a:hover{
+	transform: scale(1.05);
+}
+/*end of general*/
 /*JOBS*/
 #job-grid{
+	margin: 0% 5%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 20px;
-	grid-row-gap: 20px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
 }
 #job-grid div{
 	background-color: yellow;
 	padding: 20px;
+	border-radius: 20px;
 }
 .money{
 	font-family: "Gilmer-bold", sans-serif;

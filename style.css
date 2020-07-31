@@ -53,12 +53,14 @@ li a:hover{
 }
 #job-grid div{
 	background-color: yellow;
-	padding: 20px;
+	padding: 30px;
 	border-radius: 20px;
 }
 .money{
 	font-family: "Gilmer-bold", sans-serif;
-	font-size: 2rem;
+	font-size: 3rem;
+	padding: 0px;
+	margin: 5px 0px 0px 0px;
 }
 .business-name{
 	font-family: "Gilmer-medium", sans-serif;

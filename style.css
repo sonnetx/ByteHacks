@@ -1,1 +1,43 @@
+/*FONTS*/
+@font-face {
+  font-family: "Gilmer-bold";
+  src: url("Fonts/gilmer-bold.woff");
+}
+@font-face {
+  font-family: "Gilmer-regular";
+  src: url("Fonts/gilmer-regular.woff");
+}
+@font-face {
+  font-family: "Gilmer-medium";
+  src: url("Fonts/gilmer-medium.woff");
+}
 
+h1{
+	font-family: "Gilmer-bold", sans-serif;
+	font-size: 3rem;
+	text-align: center;
+}
+/*JOBS*/
+#job-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+#job-grid div{
+	background-color: yellow;
+	padding: 20px;
+}
+.money{
+	font-family: "Gilmer-bold", sans-serif;
+	font-size: 2rem;
+}
+.business-name{
+	font-family: "Gilmer-medium", sans-serif;
+	font-size: 1.7rem;
+}
+.business-description{
+	font-family: "Gilmer-medium", sans-serif;
+	font-size: 1.3rem;
+}
+/*end of jobs*/

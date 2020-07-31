@@ -21,7 +21,7 @@
 
     <div class="form-popup" id="myForm">
       <form action="/action_page.php" class="form-container">
-        <h2>Add Your Business Listing</h2><br>
+        <h2 style = "font-size: 2rem; color: black; padding-top: 10px; margin: 0px">Add Your Business Listing</h2><br>
 
         <label for="name"><b>Business Name</b></label>
         <input type="text" placeholder="Enter Business Name" name="name" required>
@@ -30,13 +30,13 @@
         <input type="text" placeholder="Enter Description" name="Description" required>
 
         <div class="slidecontainer">
-          <p>Money Needed:</p>
+          <label>Money Needed</label>
           <input type="range" min="1000" max="10000" value="100" class="slider" id="myRange">
           <p>Value: $<span id="demo"></span></p>
         </div><br>
 
         <button type="submit" class="btn">Submit</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
       </form>
     </div>
     <script>

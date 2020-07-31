@@ -48,6 +48,13 @@ h1{
        1px 1px 0 ;
 }
 nav{
+	padding: 10px 10px 10px 0px;
+}
+h2{
+	font-family: "Gilmer-bold", sans-serif;
+	text-align: center;
+	margin: 0% 20%;
+	padding: 3% 0%;
 }
 ul {
 	list-style-type: none;

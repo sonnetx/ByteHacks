@@ -18,6 +18,16 @@
 	z-index: -1;
 	width: 100%;
 }
+#purpose{
+	background-color: white;
+	padding: 30px;
+	margin: 5% 20%;
+	border-radius: 20px;
+}
+#purpose p{
+	font-family: "Gilmer-medium", sans-serif;
+	font-size: 1.5rem;
+}
 /*end of home*/
 /*General*/
 *{

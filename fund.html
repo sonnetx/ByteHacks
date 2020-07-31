@@ -16,6 +16,48 @@
     </nav>
   	<h1>Fund Businesses for WW2</h1>
     <h2>Want materials/products provided to you? All these businesses need is money and supplies to make that happen!</h2>
+
+    <button class="open-button" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h2>Add Your Business Listing</h2><br>
+
+        <label for="name"><b>Business Name</b></label>
+        <input type="text" placeholder="Enter Business Name" name="name" required>
+
+        <label for="Description"><b>Business Description</b></label>
+        <input type="text" placeholder="Enter Description" name="Description" required>
+
+        <div class="slidecontainer">
+          <p>Money Needed:</p>
+          <input type="range" min="1000" max="10000" value="100" class="slider" id="myRange">
+          <p>Value: $<span id="demo"></span></p>
+        </div><br>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+
     <div id = "job-grid">
       <div>
         <p class = "money">$13,000</p>

@@ -19,12 +19,13 @@
 	width: 100%;
 }
 #purpose{
-	background-color: white;
+	background-color: rgba(255, 255, 255, .8);
 	padding: 30px;
 	margin: 5% 20%;
 	border-radius: 20px;
 }
-#purpose p{
+#purpose li{
+  padding: 20px 0px;
 	font-family: "Gilmer-medium", sans-serif;
 	font-size: 1.5rem;
 }
@@ -56,18 +57,18 @@ h2{
 	margin: 0% 20%;
 	padding: 3% 0%;
 }
-ul {
+ nav ul {
 	list-style-type: none;
 	padding: 0;
 	overflow: hidden;
 	margin-left: 4%;
 }
 
-li {
+nav li {
 	float: left;
 }
 
-li a{
+nav li a{
 	font-family: "Gilmer-bold", sans-serif;
 	display: block;
 	color: black;

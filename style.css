@@ -118,6 +118,9 @@ nav li a{
 li a:hover{
   color: #FFAFDA;
 }
+.on{
+  color: #FFD9ED;
+}
 /*end of general*/
 /*HOME*/
 #img-div{
@@ -293,6 +296,8 @@ label{
 .business-name{
 	font-family: "Gilmer-medium", sans-serif;
 	font-size: 1.7rem;
+  padding: 3% 0%;
+  text-decoration: underline;
 }
 .business-description{
 	font-family: "Gilmer-medium", sans-serif;

@@ -303,8 +303,8 @@ button{
   position: absolute;
   visibility: hidden;
   color: #FF38A4;
-  left: 40px;
-  top: 100px;
+  left: 0px;
+  top: 60px;
   z-index: 10;
   -webkit-stroke-width: 2px black;
   font-family: "Noah-bold";

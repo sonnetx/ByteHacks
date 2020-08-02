@@ -173,11 +173,12 @@ li a:hover{
   bottom: 0;
   right: 15px;
   border: 3px solid #f1f1f1;
-  z-index: 9;
+  z-index: 11;
 }
 .apply{
+  width: 600px;
   top: 20%;
-  left: 30%;
+  left: 29%;
   border: none;
 }
 label{
@@ -191,7 +192,7 @@ label{
 	padding: 20px;
 }
 .form-container {
-  max-width: 450px;
+  max-width: 700px;
   padding: 10px;
   background-color: white;
   font-family: "Gilmer-medium", sans-serif;

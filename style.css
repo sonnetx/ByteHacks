@@ -69,10 +69,10 @@ h1{
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
 nav{
 	padding: 10px 10px 10px 0px;
 }
@@ -282,10 +282,31 @@ label{
 	border-radius: 20px;
 }
 #job-grid div:hover{
-  filter: brightness(.8);
+  filter: brightness(.9);
 }
 #job-grid div:click{
   filter: brightness(.1);
+}
+.donate-text, .apply-text{
+  position: absolute;
+  visibility: hidden;
+  color: #FF38A4;
+  left: 100px;
+  top: 150px;
+  z-index: 10;
+  -webkit-stroke-width: 2px black;
+  font-family: "Noah-bold";
+  font-size: 3rem;
+}
+.apply-text{
+  left: 120px;
+  top: 120px;
+}
+#job-grid div:hover .donate-text, #job-grid div:hover .apply-text{
+  visibility: visible;
+}
+#job-grid div:hover p{
+  visibility: hidden;
 }
 .money{
 	font-family: "Gilmer-bold", sans-serif;

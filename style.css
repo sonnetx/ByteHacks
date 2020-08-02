@@ -23,6 +23,7 @@
 *{
 	padding: 0px;
 	margin: 0px;
+  outline:none;
 }
 h1{
 	font-family: "Noah-bold", sans-serif;
@@ -174,6 +175,11 @@ li a:hover{
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
+.apply{
+  top: 20%;
+  left: 30%;
+  border: none;
+}
 label{
 	font-size: 1.2rem;
 }
@@ -280,12 +286,17 @@ label{
 	background-color: yellow;
 	padding: 30px;
 	border-radius: 20px;
+  text-align: center;
 }
 #job-grid div:hover{
   filter: brightness(.9);
 }
 #job-grid div:click{
   filter: brightness(.1);
+}
+button{
+  background-color: yellow;
+  border: none;
 }
 .donate-text, .apply-text{
   position: absolute;
@@ -299,7 +310,7 @@ label{
   font-size: 3rem;
 }
 .apply-text{
-  left: 120px;
+  left: 130px;
   top: 120px;
 }
 #job-grid div:hover .donate-text, #job-grid div:hover .apply-text{

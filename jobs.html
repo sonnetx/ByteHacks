@@ -50,31 +50,73 @@
     <br>
     <br>
     <script src="script.js"></script>
-  <div id = "job-grid">
+  <div id = "job-grid" >
       <div>
-        <span class="apply-text">APPLY</span>
-        <p class = "money">$1 per hr</p>
-        <p class = "business-name">Stantlin Factory Worker</p>
-        <p class = "business-description">Calling all women! If you need a job to support your family, Stantlin is looking for more assembly line workers! Low danger, high pay and no experience necessary!</p>
+        <button onclick="openForm()">
+          <span class="apply-text">APPLY</span>
+          <p class = "money">$1 per hr</p>
+          <p class = "business-name">Stantlin Factory Worker</p>
+          <p class = "business-description">Calling all women! If you need a job to support your family, Stantlin is looking for more assembly line workers! Low danger, high pay and no experience necessary!</p>
+        </button>
+        
       </div>
       <div>
-        <span class="apply-text">APPLY</span>
-        <p class = "money">$3,000</p>
-        <p class = "business-name">Dony's Refigerators</p>
-        <p class = "business-description">Extremely high pay for a assembly line overseer! Must have 5 plus years of experience and no dangerous work will be required! If chosen, will start immediatley!</p>
+        <button onclick="openForm()">
+          <span class="apply-text">APPLY</span>
+          <p class = "money">$3,000</p>
+          <p class = "business-name">Dony's Refigerators</p>
+          <p class = "business-description">Extremely high pay for a assembly line overseer! Must have 5 plus years of experience and no dangerous work will be required! If chosen, will start immediatley!</p>
+        </button>
       </div>
       <div>
-        <span class="apply-text">APPLY</span>
-        <p class = "money">$0.55 per hour</p>
-        <p class = "business-name">Dory books</p>
-        <p class = "business-description">File books in a safe and quiet enviornment. Flexible hours and no experience necessary. Safe and relaxing place to work.</p>
+        <button onclick="openForm()">
+          <span class="apply-text">APPLY</span>
+          <p class = "money">$0.55 per hour</p>
+          <p class = "business-name">Dory books</p>
+          <p class = "business-description">File books in a safe and quiet enviornment. Flexible hours and no experience necessary. Safe and relaxing place to work.</p>
+        </button>
       </div>
       <div>
-        <span class="apply-text">APPLY</span>
-        <p class = "money">$2,700</p>
-        <p class = "business-name">Dan Tires</p>
-        <p class = "business-description">Help train incoming employees on how the industry works! High pay and little manual labor, experience necessary (3 years)!</p>
+        <button onclick="openForm()">
+          <span class="apply-text">APPLY</span>
+          <p class = "money">$2,700</p>
+          <p class = "business-name">Dan Tires</p>
+          <p class = "business-description">Help train incoming employees on how the industry works! High pay and little manual labor, experience necessary (3 years)!</p>
+        </button>
       </div>
     </div>
+    <div class="form-popup apply" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h2 style = "font-size: 2rem; color: black; padding-top: 10px; margin: 0px">Job Application</h2><br>
+
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter Full Name" name="name" required>
+
+        <label for="Description"><b>Experience</b></label>
+        <input type="text" placeholder="Enter Experience" name="Description" required>
+        <br>
+
+        <button type="submit" class="btn">Apply</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
   </body>
 </html>

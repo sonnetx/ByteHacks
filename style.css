@@ -11,42 +11,29 @@
   font-family: "Gilmer-medium";
   src: url("Fonts/gilmer-medium.woff");
 }
-/*HOME*/
-#main-img{
-	position: absolute;
-	top: -20px;
-	z-index: -1;
-	width: 100%;
+@font-face {
+  font-family: "Noah-bold";
+  src: url("Fonts/Noah Head Black.otf");
 }
-#purpose{
-	background-color: rgba(255, 255, 255, .8);
-	padding: 30px;
-	margin: 5% 20%;
-	border-radius: 20px;
+@font-face {
+  font-family: "Noah-medium";
+  src: url("Fonts/Noah Head Medium.otf");
 }
-#purpose li{
-  padding: 20px 0px;
-	font-family: "Gilmer-medium", sans-serif;
-	font-size: 1.5rem;
-}
-/*end of home*/
 /*General*/
 *{
 	padding: 0px;
 	margin: 0px;
 }
 h1{
-	font-family: "Gilmer-bold", sans-serif;
-	font-size: 5.2rem;
-	color: #3b79ff;
-	-webkit-text-stroke: 3px black;
-	text-align: center;
-	text-shadow:
-       3px 3px 0 ,
-     -1px -1px 0 ,  
-      1px -1px 0 ,
-      -1px 1px 0 ,
-       1px 1px 0 ;
+	font-family: "Noah-bold", sans-serif;
+	font-size:7rem;
+	color: white;
+  margin: 0% 10%;
+  text-align: center;
+}
+.yellow{
+  display: inline-block;
+  color: #FCFF77;
 }
 nav{
 	padding: 10px 10px 10px 0px;
@@ -54,8 +41,20 @@ nav{
 h2{
 	font-family: "Gilmer-bold", sans-serif;
 	text-align: center;
-	margin: 0% 20%;
-	padding: 3% 0%;
+  font-size:1.8rem;
+  color: white;
+  margin: auto 15%;
+}
+#home h1, #home h2, #home p{
+  text-align: left;
+  margin: 0% 10%;
+}
+#home h1{
+  font-size:7rem;
+}
+#home h2{
+  width: 60%;
+  font-size:2.5rem;
 }
  nav ul {
 	list-style-type: none;
@@ -71,26 +70,47 @@ nav li {
 nav li a{
 	font-family: "Gilmer-bold", sans-serif;
 	display: block;
-	color: black;
-	text-shadow:
-       3px 3px 0 yellow,
-     -1px -1px 0 yellow,  
-      1px -1px 0 yellow,
-      -1px 1px 0 yellow,
-       1px 1px 0 yellow;
+  color: white;
 	padding: 14px 30px;
 	font-size: 1.4rem;
 	text-decoration: none;
-	-webkit-transition: transform 300ms ease-in-out;
 }
 .form-popup h2{
 	text-shadow: none;
 }
 li a:hover{
-	transform: scale(1.05);
+  color: #FFAFDA;
 }
 /*end of general*/
+/*HOME*/
+#img-div{
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+}
+#main-img{
+  position: absolute;
+  width: 100%;
+}
+#purpose{
+  position: absolute;
+  margin-top: 45%;
+  margin-left: 45%;
 
+}
+#purpose p{
+  font-family: "Noah-medium", sans-serif;
+  font-size: 2rem;
+  width: 70%;
+  margin-left: 10%;
+  color: white;
+}
+#purpose h2{
+  font-family: "Noah-bold", sans-serif;
+  font-size: 5rem;
+  color: #FCFF77;
+}
+/*end of home*/
 /*JOBS*/
 .open-button {
   background-color: #555;

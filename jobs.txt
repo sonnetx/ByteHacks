@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JOBS | Moducon</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style = "background-color: #EE7AB9">
+    <div id = "img-div"><img id = "main-img" src="Images/jobs-background.svg" alt=""></div>
+  	<nav>
+      <ul>
+      <li><a href="index.html">
+        <div class="tooltip">Home<span class="tooltiptext">Click here to learn about ModuCon!</span>
+        </div>
+      </a></li>
+      <li><a href="fund.html">
+        <div class="tooltip">Fund<span class="tooltiptext">Click here to purchase materials/ products from a factory, or add your business on this list to get orders!</span>
+        </div>
+      </a></li>
+      <li><a href="jobs.html">
+        <div class="tooltip on">Jobs<span class="tooltiptext">Click here to search from our abundant list of jobs!</span>
+        </div>
+      </a></li>
+    </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<h1><div class = yellow>Jobs</div></h1>
+	<h2>Worry no more. Search for a job here!</h2>
+  <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="script.js"></script>
+  <div id = "job-grid" >
+      <div>
+<<<<<<< HEAD
+        <p class = "money">$1 per hr</p>
+        <p class = "business-name">Stantlin Factory Worker</p>
+        <p class = "business-name">Augusta, Maine</p>
+        <p class = "business-description">Calling all women! If you need a job to support your family, Stantlin is looking for more assembly line workers! Low danger, high pay and no experience necessary!</p>
+      </div>
+      <div>
+        <p class = "money">$3,000</p>
+        <p class = "business-name">Dony's Refigerators</p>
+        <p class = "business-name">Milwaukee, Wisconsin</p>
+        <p class = "business-description">Extremely high pay for a assembly line overseer! Must have 5 plus years of experience and no dangerous work will be required! If chosen, will start immediatley!</p>
+      </div>
+      <div>
+        <p class = "money">$0.55 per hour</p>
+        <p class = "business-name">Dory books</p>
+        <p class = "business-name">San Fransico, California</p>
+        <p class = "business-description">File books in a safe and quiet enviornment. Flexible hours and no experience necessary. Safe and relaxing place to work.</p>
+      </div>
+      <div>
+        <p class = "money">$2,700</p>
+        <p class = "business-name">Dan Tires</p>
+        <p class = "business-name">Chicago, Illinois</p>
+        <p class = "business-description">Help train incoming employees on how the industry works! High pay and little manual labor, experience necessary (3 years)!</p>
+=======
+        <button onclick="openForm()">
+          <span class="apply-text">APPLY</span>
+          <p class = "money">$1 per hr</p>
+          <p class = "business-name">Stantlin Factory Worker</p>
+          <p class = "business-description">Calling all women! If you need a job to support your family, Stantlin is looking for more assembly line workers! Low danger, high pay and no experience necessary!</p>
+        </button>
+        
+      </div>
+      <div>
+        <button onclick="openForm()">
+          <span class="apply-text">APPLY</span>
+          <p class = "money">$3,000</p>
+          <p class = "business-name">Dony's Refigerators</p>
+          <p class = "business-description">Extremely high pay for a assembly line overseer! Must have 5 plus years of experience and no dangerous work will be required! If chosen, will start immediatley!</p>
+        </button>
+      </div>
+      <div>
+        <button onclick="openForm()">
+          <span class="apply-text">APPLY</span>
+          <p class = "money">$0.55 per hour</p>
+          <p class = "business-name">Dory books</p>
+          <p class = "business-description">File books in a safe and quiet enviornment. Flexible hours and no experience necessary. Safe and relaxing place to work.</p>
+        </button>
+      </div>
+      <div>
+        <button onclick="openForm()">
+          <span class="apply-text">APPLY</span>
+          <p class = "money">$2,700</p>
+          <p class = "business-name">Dan Tires</p>
+          <p class = "business-description">Help train incoming employees on how the industry works! High pay and little manual labor, experience necessary (3 years)!</p>
+        </button>
+>>>>>>> origin/master
+      </div>
+    </div>
+    <div class="form-popup apply" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h2 style = "font-size: 2rem; color: black; padding-top: 10px; margin: 0px">Job Application</h2><br>
+
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter Full Name" name="name" required>
+
+        <label for="Description"><b>Experience</b></label>
+        <input type="text" placeholder="Enter Experience" name="Description" required>
+        <br>
+
+        <button type="submit" class="btn">Apply</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FUND | Moducon</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style = "background-color: #EE7AB9">
+    <div id = "img-div"><img id = "main-img" src="Images/fund-background.svg" alt=""></div>
+    <nav>
+      <ul>
+      <li><a href="index.html">
+        <div class="tooltip">Home<span class="tooltiptext">Click here to learn about ModuCon!</span>
+        </div>
+      </a></li>
+      <li><a href="fund.html">
+        <div class="tooltip on">Fund<span class="tooltiptext">Click here to purchase materials/ products from a factory, or add your business on this list to get orders!</span>
+        </div>
+      </a></li>
+      <li><a href="jobs.html">
+        <div class="tooltip">Jobs<span class="tooltiptext">Click here to search from our abundant list of jobs!</span>
+        </div>
+      </a></li>
+    </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  	<h1><div class = "yellow">FUND</div></h1>
+    <h2>Want materials/products provided to you? All these businesses need is money and supplies to make that happen!</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button class="open-button" onclick="openForm()">ADD YOUR BUSINESS</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h2 style = "font-size: 2rem; color: black; padding-top: 10px; margin: 0px">Add Your Business Listing</h2><br>
+
+        <label for="name"><b>Business Name</b></label>
+        <input type="text" placeholder="Enter Business Name" name="name" required>
+
+        <label for="Description"><b>Business Description</b></label>
+        <input type="text" placeholder="Enter Description" name="Description" required>
+        <label for="Description"><b>Address (will not be shown, only used to mail money)</b></label>
+        <input type="text" placeholder="Enter Address" name="Description" required>
+
+        <div class="slidecontainer">
+          <label>Money Needed</label>
+          <input type="range" min="100" max="10000" value="50" class="slider" id="myRange">
+          <p>Value: $<span id="demo"></span></p>
+        </div><br>
+        <label for="">Thanks! Once your business is approved, we will put your business on our website shortly. </label><br>
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+
+    <div id = "job-grid">
+      <div>
+        <span class="donate-text">FULFILL ORDER <br> <section style = "font-size: 1.3rem">Mail money to our HQ at 421 Lacosta Street, California. Attach a note with this company's Business ID: 134395</section></span>
+        <p class = "money">$1,000</p>
+        <p class = "business-name">Joe's Trade & Co.</p>
+        <p class = "business-name">Portland, Oregon</p>
+        <p class = "business-description">Joe knows that this is a lot to ask but this money will go toward keeping his business alive and allow him to give supplies to our front line fighters. In return Joe will give you a free home appliance of your choice!</p>
+      </div>
+      <div>
+        <span class="donate-text">FULFILL ORDER <br> <section style = "font-size: 1.3rem">Mail money to our HQ at 421 Lacosta Street, California. Attach a note with this company's Business ID: 948317</section></span>
+        <p class = "money">$100</p>
+<<<<<<< HEAD
+        <p class = "business-name">Sally's Food Warehouse</p>
+        <p class = "business-name">Atlanta, Georgia</p>
+        <p class = "business-description">Sally will be able to make 5 donations to soldiers with this money and in return you'll receive two extra sugar rations from Sally. </p>
+=======
+        <p class = "business-name tooltip">Sally's Food Warehouse</p>
+        <p class = "business-description">Money will be used to distribute food to Sally will be able to make 5 donations to soldiers with this money and in return you'll receive two extra sugar rations from Sally. </p>
+>>>>>>> origin/master
+      </div>
+      <div>
+        <span class="donate-text">FULFILL ORDER <br> <section style = "font-size: 1.3rem">Mail money to our HQ at 421 Lacosta Street, California. Attach a note with this company's Business ID: 586921</section></span>
+        <p class = "money">$350</p>
+        <p class = "business-name">Cody's Clothing</p>
+        <p class = "business-name">Boston, Massachusetts</p>
+        <p class = "business-description">Help donate clothing to our army and keep our soldiers warm! Cody will in turn give you one free jacket or a overcoat (restrictions apply). </p>
+      </div>
+      <div>
+        <span class="donate-text">FULFILL ORDER <br> <section style = "font-size: 1.3rem">Mail money to our HQ at 421 Lacosta Street, California. Attach a note with this company's Business ID: 293875</section></span>
+        <p class = "money">$200</p>
+        <p class = "business-name">Brooker's Shoe Store</p>
+        <p class = "business-name">Baltimore, Maryland</p>
+        <p class = "business-description">Keep shoes on the feet of our warriors by funding Brooker's Shoe store. Recieve a free pair of custom shoes upon funding! </p>
+      </div>
+      <div>
+        <span class="donate-text">FULFILL ORDER <br> <section style = "font-size: 1.3rem">Mail money to our HQ at 421 Lacosta Street, California. Attach a note with this company's Business ID: 058374</section></span>
+        <p class = "money">$400</p>
+        <p class = "business-name">George Auto Repair</p>
+        <p class = "business-name">Detroit, Michigan</p>
+        <p class = "business-description">Fund George so he can repair machinery and spend more time working for the government!</p>
+      </div>
+    </div>
+  	<a href="jobs.html"></a>
+    <script src="script.js"></script>
+  </body>
+</html>

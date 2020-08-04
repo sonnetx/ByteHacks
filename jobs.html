@@ -47,14 +47,51 @@
     <br>
     <br>
     <br>
-    <h2>Search for jobs from our curated list! Hover over each yellow box to apply for the job.</h2>
+    <h2>Search for jobs from our curated list! Hover over each yellow box to see the address where you can find a job.</h2>
     <br>
     <br>
 
+    <button class="open-button" onclick="openForm()">ADD JOB APPLICATIONS</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="thanks.html" method = "get" class="form-container">
+        <h2 style = "font-size: 2rem; color: black; padding-top: 10px; margin: 0px">Advertise Job Applications</h2><br>
+
+        <label for="ame"><b>Hourly wage(in USD)</b></label>
+        <input type="text" placeholder="3" name="name" required>
+<br>
+        <label for="Desription"><b>Job Position</b></label>
+        <input type="text" placeholder="Enter Job Position" name="Descrition" required>
+        <label for="Descrption"><b>Description(experience, worker type, etc.)</b></label>
+        <input type="text" placeholder="Enter Description" name="Descrition" required>
+
+        <label for="">Thanks! Once your business is approved, we will put your business on our website shortly. </label><br>
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
     <script src="script.js"></script>
   <div id = "job-grid" >
       <div>
-        <span class="donate-text"><br><section style = "font-size: 2.5rem; margin-left: 3%">Business ID: 756382</section></span>
+        <span class="donate-text"><br><section style = "font-size: 2.5rem; margin-left: 3%">Address: 7271 Parker Road, 87322, CA</section></span>
           <p class = "money">$1 per hr</p>
           <p class = "business-name">Stantlin Factory Worker</p>
           <p class = "business-description">Calling all women! If you need a job to support your family, Stantlin is looking for more assembly line workers! Low danger, high pay and no experience necessary!</p>
@@ -62,73 +99,27 @@
         
       </div>
       <div>
-        <span class="donate-text"><br><section style = "font-size: 2.5rem; margin-left: 3%">Business ID: 573920</section></span>
+        <span class="donate-text"><br><section style = "font-size: 2.5rem; margin-left: 3%">Business Address: 912 Charleston Drive, 91912, CA</section></span>
           <p class = "money">$2 per hr</p>
           <p class = "business-name">Dony's Refigerators</p>
           <p class = "business-description">Extremely high pay for a assembly line overseer! Must have 5 plus years of experience and no dangerous work will be required! If chosen, will start immediatley!</p>
         </button>
       </div>
       <div>
-        <span class="donate-text"><br><section style = "font-size: 2.5rem; margin-left: 3%">Business ID: 857389</section></span>
+        <span class="donate-text"><br><section style = "font-size: 2.5rem; margin-left: 3%">Business Address: 122 Aleface Avenue, 91823, CA</section></span>
           <p class = "money">$0.55 per hour</p>
           <p class = "business-name">Dory books</p>
           <p class = "business-description">File books in a safe and quiet enviornment. Flexible hours and no experience necessary. Safe and relaxing place to work.</p>
         </button>
       </div>
       <div>
-        <span class="donate-text"><br><section style = "font-size: 2.5rem; margin-left: 3%">Business ID: 292723</section></span>
+        <span class="donate-text"><br><section style = "font-size: 2.5rem; margin-left: 3%">Business Address: 708 Aleneda Street, 21312, MI</section></span>
           <p class = "money">$2 per hr</p>
           <p class = "business-name">Dan Tires</p>
           <p class = "business-description">Help train incoming employees on how the industry works! High pay and little manual labor, experience necessary (3 years)!</p>
         </button>
       </div>
     </div><br><br><br><br>
-    <h2>Job Applications List</h2>
-    <section id="app">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <div class="comment">
-            <p v-for="items in item" v-text="items"></p>
-              </div>
-              </div>
-              </div>
-          <div class="row">
-            <div class="col-6">
-          <textarea type="text" class="input" placeholder="Write the business ID, your name, your work experience, and your address." v-model="newItem" @keyup.enter="addItem()"></textarea>
-              <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Submit Application</button>
-            </div>
-          </div>
-        </div>
-      </section>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){ 
-  
-    $(".primaryContained").on('click', function(){
-    $(".comment").addClass("commentClicked");
-  });//end click
-  $("textarea").on('keyup.enter', function(){
-    $(".comment").addClass("commentClicked");
-  });//end keyup
-  });//End Function
-
-new Vue({
-    el: "#app",
-    data:{
-       title: 'Add a comment',
-      newItem: '',
-      item: [],
-    },
-    methods:{
-      addItem  (){
-      this.item.push(this.newItem);
-        this.newItem = "";
-      }
-  }
-
-  });
-  </script>
+    
   </body>
 </html>

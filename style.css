@@ -20,57 +20,6 @@
   src: url("Fonts/Noah Head Medium.otf");
 }
 
-
-.container{
-  margin: 3% 10%;
-}
-
-.comment{ 
-  font-family: "Gilmer-medium";
-  background: white;
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
-
-.commentClicked{
-  min-height: 0px; 
-  border: 1px solid #eee; 
-  border-radius: 5px; 
-  padding: 5px 10px}
-
-textarea{
-  width: 90%; 
-  font-family: "Gilmer-bold";
-  border: none; 
-  background: #E8E8E8; 
-  padding: 5px 10px; 
-  height: 90%;
-  height: 50px;
-  font-size: 1.2rem;
-  border-radius: 5px; 
-  transition: all 0.5s;margin-top: 15px;
-}
-
-button.primaryContained{ 
-  background: #7785FF; 
-  color: #fff; 
-  padding: 10px 10px; 
-  font-family: "Gilmer-bold";
-  font-size: 1.3rem;
-  border: none; 
-  margin-top: 0px; 
-  cursor: pointer; 
-  text-transform: uppercase; 
-  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.25); 
-  transition: 1s all; 
-  border-radius: 5px;
-}
-
-button.primaryContained:hover{ 
-  background: #6838F2; 
-}
-
-
 /*General*/
 *{
 	padding: 0px;
@@ -385,3 +334,28 @@ button{
 	font-size: 1.3rem;
 }
 /*end of jobs*/
+
+
+#thanks{
+  background-color: #6838F2;
+}
+#thanks h1{
+  position: relative;
+  left: -10%;
+  top: 10%;
+  font-family: "Noah-bold", sans-serif;
+  font-size:7rem;
+  text-align: center;
+  margin: 0% 10%;
+  margin-left: 0%;
+  color: #FCFF77;
+}
+#thanks h2{
+  position: relative;
+  top: 10%;
+  font-family: "Noah-medium", sans-serif;
+  font-size: 3rem;
+  margin: 0% 10%;
+  text-align: center;
+  color: white;
+}
